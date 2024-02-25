@@ -1,0 +1,40 @@
+.home {
+    background-image: url("../../../public/img/cosmetica.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 18.75rem;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home img{
+    height:7.5rem;
+    display: flex;
+}
+.home .container-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home .container-home h1 {
+    text-align: center;
+    color: rgba(237, 234, 231, 0.713);
+    text-shadow: .25rem .25rem .125rem black;
+}
+.home .container-home button {
+    background-color: rgba(250, 235, 215, 0.763);
+    width: 9.375rem;
+    margin-bottom: 1.25rem;
+}
+.home .container-home button a{
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.home .container-home button a:hover{
+    color: rgb(121, 121, 97);
+}

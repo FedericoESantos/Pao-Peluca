@@ -1,0 +1,32 @@
+.header{
+    width: 100%;
+    height: 8.125rem;
+    background-color: rgb(189, 185, 185);
+    display: flex;
+    justify-content: space-between;
+}
+.container-info img{
+    height: 8.125rem;
+    opacity: 65%;
+}
+.container-info2 img{
+    height: 8.125rem;
+    opacity: 65%;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container .img1 img{
+    height: 8.125rem;
+    opacity: 65%;
+
+}
+.container .img2 img{
+    height: 8.125rem;
+    opacity: 65%;
+}
+.container .img4 img{
+    height: 8.125rem;
+    opacity: 65%;
+}
