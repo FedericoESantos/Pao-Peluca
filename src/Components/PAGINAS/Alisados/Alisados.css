@@ -1,5 +1,42 @@
 .alisados{
     width: 100%;
-    height: 56.25rem;
+    height: 43.75rem;
     background-color: whitesmoke;
+}
+.alisados .alisados-title{
+    background-color: rgba(205, 116, 8, 0.42);
+    width: 100%;
+    height: 1.875rem;
+    margin:0%;
+}
+.alisados .alisados-title h2{
+    margin: 0%;
+    padding-left: .625rem;
+}
+
+.contenedor-alisados{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    gap: .625rem;
+    justify-content: center;
+}
+.contenedor-alisados .card-alisados{
+    background-color: rgba(195, 171, 75, 0.515);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: .625rem;
+    width: 9.375rem;
+    height: auto;
+    align-items: center;
+    border-style:groove;
+}
+.contenedor-alisados .card-alisados img{
+    width: 8.75rem;
+    height: 11.4375rem;
+    margin-top: .3125rem;
+
 }
