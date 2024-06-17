@@ -1,0 +1,21 @@
+{
+  "name": "pao-page",
+  "version": "1.0.0",
+  "description": "Pagina de peluqueria de paola",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "FES",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "handlebars": "^4.7.8",
+    "socket.io": "^4.7.5"
+  }
+}

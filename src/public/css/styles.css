@@ -1,0 +1,334 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: 'typo-linda';
+    src: url('/font/Bartender.ttf');
+}
+@font-face{
+    font-family: 'typo-nav';
+    src: url('/font/Cream.otf');
+}
+
+body{
+    background-color: rgb(234, 210, 218);
+}
+/* -------------------- HEADER --------------------------- */
+.header{
+    display: flex;
+    max-width: 100%;
+    background-color: rgb(215, 198, 209);
+    justify-content: space-between;
+    border-style: groove;
+    align-items: center;
+}
+.costado {
+    max-width: 11%; /* Establece el ancho máximo de cada imagen */
+    height: auto;
+}
+.centro {
+    max-width: 75%; /* Establece el ancho máximo de cada imagen */
+    height: auto;
+}
+/* -------------------- NAV --------------------------- */
+
+.nav{
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-left: .625rem;
+    margin: auto;
+    background-color: rgba(77, 77, 141, 0.37);
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav p{
+    font-family: typo-linda;
+    font-size: 20px;
+    color: rgb(240, 224, 132);
+    text-shadow: 3px 2px 6px rgb(78, 62, 56);
+}
+.nav ul{
+    display: flex;
+    flex-wrap:  wrap;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.nav ul li{
+    float: left;
+}
+.nav ul li a{
+    font-family: typo-nav;
+    font-size: 28px;
+    color: rgb(68, 48, 48);
+    background-color: rgba(77, 77, 141, 0.648);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: .625rem .9375rem;
+    display: block;
+    border-style:initial;
+}
+.nav ul li a:hover{
+    background-color: rgba(171, 176, 194, 0.648);
+    color: rgb(255, 188, 2);
+    text-shadow: .125rem .125rem .25rem rgb(34, 34, 33);
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+}
+.nav li:hover > ul{
+    display: block;
+}
+/* -------------------- SLIDER --------------------------- */
+.slider{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0%;
+    width: 400%;
+    animation: slide 12s infinite alternate linear;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes slide{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/* -------------------- TIPS --------------------------- */
+
+.cont-tips{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color:rgba(137, 43, 226, 0.479);
+    gap: .625rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-tips img{
+    width: auto;
+    height: 21.875rem;
+}
+
+/* configuracion de la card */
+
+.cont-tips .card-tips{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 271px;
+    height: 350px;
+    margin: .625rem;
+    padding: .625rem;
+    border-radius: .9375rem;
+    border-style: groove;
+    background-color: rgba(245, 245, 220, 0.589);
+}
+
+/* -------------------- FOOTER --------------------------- */
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgba(77, 77, 141, 0.37);
+    gap: .625rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer .cont-gps{
+    width: auto;
+    margin: .625rem;
+}
+
+.menu-footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    list-style: none;
+    gap: .625rem;
+    justify-content: center;
+}
+.menu-footer li a{
+    font-family: typo-nav;
+    font-size: 25px;
+    color: rgb(68, 48, 48);
+    text-decoration: none;
+}
+.menu-footer li a:hover{
+    color: rgb(179, 18, 152);
+    font-size: 28px;
+    text-shadow: .125rem .125rem .25rem rgb(235, 235, 208);
+}
+
+
+.menu-footer .enlaces{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+.footer .enlaces .redes{
+    display: flex;
+    margin: .625rem;
+    gap: .625rem;
+    justify-content: center;
+}
+.footer .enlaces .redes .icono-redes{
+    height: 1.875rem;
+}
+
+.footer .logo img{
+    margin: .9375rem;
+    height: 15.625rem;
+}
+
+
+/* -------------------- PAGINA DE CONTACTO --------------------------- */
+
+.main-contacto{
+    width: 100%;
+    height: 620px;
+    display: flex;
+    background-color: rgba(233, 150, 122, 0.747);
+}
+
+.main-contacto .contenido-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(226, 133, 245);
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.main-contacto .contenido-contacto h2 {
+    margin-top: 0;
+    text-align: center;
+    font-family: 'typo-nav';
+    font-size: 35px;
+}
+
+.main-contacto .contenido-contacto .form-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px;
+    width: 18.75rem;
+}
+
+.main-contacto .contenido-contacto .form-group label {
+    color: #021528;
+    margin-bottom: 5px;
+    font-family: 'typo-nav';
+    font-size: 25px; 
+}
+
+.main-contacto .contenido-contacto .form-group input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.main-contacto .contenido-contacto .form-group textarea {
+    resize: vertical;
+    min-height: 12.5rem;
+}
+
+.main-contacto .contenido-contacto form button {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    background-color: #cc00ff;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'typo-nav';
+    font-size: 25px; 
+}
+
+.main-contacto .contenido-contacto form button:hover {
+    background-color: #b30095;
+}
+
+
+/* -------------------- PAGINA DE PRODUCTOS --------------------------- */
+
+.main-prod{
+    width: 100%;
+    height: 36.25rem;
+    display: flex;
+    background-color: rgba(233, 150, 122, 0.747);
+}
+
+/* -------------------- PAGINA DE CURSOS --------------------------- */
+
+.main-cursos{
+    width: 100%;
+    height: 36.25rem;
+    display: flex;
+    background-color: rgba(233, 150, 122, 0.747);
+}
+
+/* -------------------- PAGINA DE SALUD Y BELLEZA --------------------------- */
+
+.main-salud{
+    width: 100%;
+    height: 36.25rem;
+    display: flex;
+    background-color: rgba(233, 150, 122, 0.747);
+}
+.main-salud .titulo-salud{
+    background: linear-gradient(to right, #c217a5, #8f94fb48);
+    width: 100%;
+    height: 60px;
+}
+.main-salud .titulo-salud p{
+    font-family: typo-nav;
+    font-size: 28px;
+    padding-left: 15px;
+    color: rgb(247, 179, 77);
+    text-shadow: 2px 2px 3px rgb(36, 36, 33);
+}
+.main-salud .titulo-salud span{
+    font-family: typo-nav;
+    font-size: 25px;
+    padding: 5px;
+}
