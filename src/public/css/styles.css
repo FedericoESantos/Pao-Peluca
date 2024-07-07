@@ -311,8 +311,9 @@ body{
 
 .main-salud{
     width: 100%;
-    height: 36.25rem;
+    height: auto;
     display: flex;
+    flex-direction: column;
     background-color: rgba(233, 150, 122, 0.747);
 }
 .main-salud .titulo-salud{
@@ -331,4 +332,25 @@ body{
     font-family: typo-nav;
     font-size: 25px;
     padding: 5px;
+}
+
+.main-salud .videos{
+    display: flex;
+    width: 100%;
+    background-color: rgba(142, 122, 233, 0.747);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-salud .videos figure img{
+    height: 350px;
+}
+
+.main-salud .videos .card{
+    height: 300px;
+    border-style: groove;
+    margin: 20px;
+    background-color: #6b4f6670;
+}
+.main-salud .videos .card video{
+    height: 300px;
 }
