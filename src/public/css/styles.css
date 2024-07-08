@@ -302,11 +302,155 @@ body{
 
 .main-cursos{
     width: 100%;
-    height: 36.25rem;
+    height: auto;
     display: flex;
+    margin: auto;
+    flex-direction: column;
     background-color: rgba(233, 150, 122, 0.747);
 }
+.main-cursos .titulo-cursos{
+    background: linear-gradient(to right, #5f4383, #7b7eb148);
+    width: 100%;
+}
+.main-cursos .titulo-cursos p{
+    font-family: typo-nav;
+    font-size: 28px;
+    padding-left: 15px;
+    color: rgb(247, 179, 77);
+    text-shadow: 2px 2px 3px rgb(36, 36, 33);
+}
+.main-cursos .titulo-cursos span{
+    font-family: typo-nav;
+    font-size: 25px;
+    padding: 10px;
+    color: rgb(204, 181, 228);
+}
 
+.main-cursos .cursos{
+    display: flex;
+    width: 100%;
+    background-color: rgba(233, 194, 122, 0.747);
+    flex-wrap: wrap;
+}
+.main-cursos .cursos-container .intro-cursos{
+    width: 100%;
+    background-color: rgba(233, 194, 122, 0.747);
+    text-align: center;
+}
+.main-cursos .cursos-container .intro-cursos .texto{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+}
+.main-cursos .container-box{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main-cursos .container-box a{
+    text-decoration: none;
+    color:#eb39be;
+    text-shadow: 2px 2px 4px black;
+}
+.main-cursos .container-box .box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    background-image: url("/img/cursos/corte.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+
+}
+.main-cursos .container-box .box img, h4, p{
+    position: relative;
+    margin-top: 10px;
+    z-index: 1;
+    transition: all 200ms;
+}
+.main-cursos .container-box .box h4{
+    font-size: 30px;
+    transform: translateY(60px);
+}
+.main-cursos .container-box .box p{
+    font-size: 14px;
+    transform: translateY(60px);
+    opacity: 0;
+}
+/* EFECTO HOVER */
+.main-cursos .container-box .box .back-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    background: red;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(218, 160, 3), rgb(211, 189, 129));
+    opacity: 0.5;
+}
+.main-cursos .container-box .box:hover .back-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+.main-cursos .container-box .box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: rgb(238, 12, 151);
+    font-weight: bold;
+}
+.main-cursos .container-box .box:hover h4{
+    transform: translateY(0);
+    color: rgb(186, 224, 114);
+}
+
+.main-cursos .container-box .box2 .back-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    background: rgb(73, 138, 223);
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(11, 41, 107), rgb(148, 190, 202)
+    );
+}
+
+.main-cursos .container-box .box3 .back-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    background: rgb(108, 230, 173);
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(57, 128, 48), rgb(245, 234, 142)
+    );
+}
+
+.main-cursos .container-box .box4 .back-hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    background: rgb(196, 97, 196);
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(102, 25, 76), rgb(241, 209, 119)
+    );
+}
 /* -------------------- PAGINA DE SALUD Y BELLEZA --------------------------- */
 
 .main-salud{
@@ -319,7 +463,7 @@ body{
 .main-salud .titulo-salud{
     background: linear-gradient(to right, #c217a5, #8f94fb48);
     width: 100%;
-    height: 60px;
+    height: auto;
 }
 .main-salud .titulo-salud p{
     font-family: typo-nav;
@@ -328,10 +472,11 @@ body{
     color: rgb(247, 179, 77);
     text-shadow: 2px 2px 3px rgb(36, 36, 33);
 }
-.main-salud .titulo-salud span{
+.main-salud .titulo-salud .texto{
+    display: inline-block;
     font-family: typo-nav;
     font-size: 25px;
-    padding: 5px;
+    padding:15px;
 }
 
 .main-salud .videos{
