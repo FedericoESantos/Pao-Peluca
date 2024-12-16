@@ -1,0 +1,192 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "h1";
+    src: url("/public/FONT/Merry\ Holiday.ttf");
+}
+
+body {
+    background-color: rgb(219, 197, 168);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body p {
+    padding: 5px;
+}
+
+/* ------------------ IMAGEN DE CABECERA ------------------  */
+
+header {
+    background-image: url("/public/IMG/head.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(255, 196, 0);
+    padding: 60px;
+    height: auto;
+}
+
+@media (max-width: 560px)  {
+    header {
+        background-size: cover;
+        background-position: top;
+        padding: 20px;
+        height: auto;
+    }
+}
+
+/* ----------------------- NAV -------------------------- */
+
+main .cabe {
+    width: 100%;
+    height: auto;
+    background-color: #9e6946af;
+    
+}
+
+main .cabe h1 {
+    font-family: "h1";
+    text-align: center;
+    color: rgb(248, 210, 138);
+    text-shadow: 2px 2px 4px black;
+    padding: 5px;
+}
+
+main .cabe nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+main .cabe nav ul li {
+    margin-right: 20px;
+}
+
+main .cabe nav ul li img {
+    width: 20px;
+    margin-right: 5px; 
+    vertical-align: middle; 
+}
+
+main .cabe nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main .cabe nav ul li a:hover {
+    color: rgb(231, 29, 14);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* ------------------------ FOOTER -------------------------  */
+
+footer {
+
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px ;
+    background-color: #9e6946af;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center; 
+    }
+
+    footer .gps,
+    footer .paginas,
+    footer .links {
+        width: 100%; 
+    }
+}
+
+footer hr {
+    width: 100%; 
+    border: none; 
+    height: 2px; 
+    background-color: white; 
+    margin: 20px 0; 
+}
+
+footer .gps iframe {
+    max-width: 320px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    footer .gps iframe {
+        max-width: 100%; 
+    }
+}
+
+footer .paginas {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .paginas ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .paginas ul li {
+    padding-bottom: 10px;
+}
+
+footer .paginas ul li .selec {
+    color: rgb(89, 12, 161);
+}
+
+footer .paginas ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .paginas ul li a:hover{
+    color: red;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .links .face img, .insta img, .what img {
+    height: 30px;
+}
+
+footer .links .face, .insta, .what {
+    gap: 5px;
+    align-items: center;
+}
