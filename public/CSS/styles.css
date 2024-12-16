@@ -21,6 +21,7 @@ body {
     padding: 0;
     text-align: center;
 }
+
 body p {
     padding: 5px;
 }
@@ -37,7 +38,7 @@ header {
     height: auto;
 }
 
-@media (max-width: 560px)  {
+@media (max-width: 560px) {
     header {
         background-size: cover;
         background-position: top;
@@ -52,7 +53,7 @@ main .cabe {
     width: 100%;
     height: auto;
     background-color: #000000af;
-    
+
 }
 
 main .cabe h1 {
@@ -80,8 +81,8 @@ main .cabe nav ul li {
 
 main .cabe nav ul li img {
     width: 20px;
-    margin-right: 5px; 
-    vertical-align: middle; 
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 main .cabe nav ul li a {
@@ -95,7 +96,7 @@ main .cabe nav ul li a:hover {
     font-weight: bolder;
 }
 
- /* ------------------------------- SLIDER ------------------------------------------------ */
+/* ------------------------------- SLIDER ------------------------------------------------ */
 
 main .slider {
     width: 100%;
@@ -119,11 +120,12 @@ main .slider .slide img {
     width: 100%;
 }
 
-@keyframes scroll{
+@keyframes scroll {
     0% {
         transform: translateX(0);
         -webkit-transform: translateX(0);
     }
+
     100% {
         -webkit-transform: translateX(calc(-200px * 7));
         transform: translateX(calc(-200px * 7));
@@ -166,7 +168,7 @@ main .promocion {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     box-sizing: border-box;
     background-color: rgba(119, 88, 66, 0.692);
 }
@@ -185,31 +187,113 @@ main .promocion h3 {
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
+/* --------------------------------- PRODUCTOS PAGINA (3) ---------------------- */
 
+main h3 {
+    font-family: "h1";
+    font-weight: bold;
+    font-size: 29px;
+    color: rgb(228, 183, 99);
+    text-shadow: 2px 2px 4px rgb(17, 17, 17);
+    background-color: rgb(39, 39, 41);
+}
 
+main h2 {
+    font-family: "h1";
+}
 
+main .container .producto {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 150px;
+    height: auto;
+    border-style: groove;
+    box-shadow: 2px 2px 5px black;
+    overflow: hidden;
+}
 
+main .container .producto img {
+    width: 150px;
+}
 
+main .container .producto button {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
 
+main .container-info {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(23, 37, 37);
+}
 
+main .container-info span {
+    padding: 20px;
+    color: aliceblue;
+}
 
+/* --------------------------------- CONTACTO PAGINA (5) ---------------------- */
+main h2 {
+    font-weight: bold;
+    font-size: 29px;
+    color: rgb(228, 183, 99);
+    text-shadow: 2px 2px 4px rgb(17, 17, 17);
+    background-color: rgb(39, 39, 41);
+    margin-bottom: 20px;
+}
 
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
 
+main form textarea {
+    margin: 15px;
+    width: 350px;
+    height: 150px;
+    resize: none;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0)
+}
 
+main form input {
+    margin: 10px;
+}
 
+/* --------------------------------- CARRITOS PAGINA (6) ---------------------- */
 
+main table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 50px auto; 
+    text-align: center; 
+}
 
+main table thead th {
+    text-align: center; 
+    padding: 20px 10px; 
+    background-color: #f4f4f4; 
+    border: 1px solid #ccc; 
+}
 
+main table tbody  td {
+        text-align: center; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+}
 
-
-
-
-
-
-
-
-
-
+main button {
+    margin: 30px;
+}
 
 /* ------------------------ FOOTER -------------------------  */
 
@@ -217,7 +301,7 @@ footer {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    padding: 20px ;
+    padding: 20px;
     background-color: #9e6946af;
     color: white;
     position: relative;
@@ -228,24 +312,24 @@ footer {
 
 @media (max-width: 768px) {
     footer {
-        flex-direction: column; 
-        text-align: center; 
-        align-items: center; 
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
     footer .gps,
     footer .paginas,
     footer .links {
-        width: 100%; 
+        width: 100%;
     }
 }
 
 footer hr {
-    width: 100%; 
-    border: none; 
-    height: 2px; 
-    background-color: white; 
-    margin: 20px 0; 
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
 }
 
 footer .gps iframe {
@@ -257,7 +341,7 @@ footer .gps iframe {
 
 @media (max-width: 768px) {
     footer .gps iframe {
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 
@@ -269,7 +353,7 @@ footer .paginas {
     align-items: center;
 }
 
-footer .paginas ul{
+footer .paginas ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -286,12 +370,12 @@ footer .paginas ul li .selec {
     color: rgb(89, 12, 161);
 }
 
-footer .paginas ul li a{
+footer .paginas ul li a {
     color: white;
     text-decoration: none;
 }
 
-footer .paginas ul li a:hover{
+footer .paginas ul li a:hover {
     color: red;
 }
 
@@ -301,11 +385,15 @@ footer .links {
     gap: 10px;
 }
 
-footer .links .face img, .insta img, .what img {
+footer .links .face img,
+.insta img,
+.what img {
     height: 30px;
 }
 
-footer .links .face, .insta, .what {
+footer .links .face,
+.insta,
+.what {
     gap: 5px;
     align-items: center;
 }
