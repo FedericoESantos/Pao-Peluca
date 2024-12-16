@@ -9,6 +9,11 @@
     src: url("/public/FONT/Merry\ Holiday.ttf");
 }
 
+@font-face {
+    font-family: "h3";
+    src: url("/public/FONT/Heyam.ttf");
+}
+
 body {
     background-color: rgb(219, 197, 168);
     font-family: Arial, sans-serif;
@@ -46,7 +51,7 @@ header {
 main .cabe {
     width: 100%;
     height: auto;
-    background-color: #9e6946af;
+    background-color: #000000af;
     
 }
 
@@ -90,11 +95,125 @@ main .cabe nav ul li a:hover {
     font-weight: bolder;
 }
 
+ /* ------------------------------- SLIDER ------------------------------------------------ */
+
+main .slider {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+main .slider .slider-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+}
+
+main .slider .slide {
+    width: 200px;
+}
+
+main .slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll{
+    0% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+/* --------------------------------- MAIN PAGINA HOME (1) ---------------------- */
+
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+main .container .card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 220px;
+    height: auto;
+    border-style: groove;
+    margin: 20px;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+}
+
+main .container .card img {
+    width: 220px;
+}
+
+main .promocion {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    background-color: rgba(119, 88, 66, 0.692);
+}
+
+main .promocion img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+main .promocion h3 {
+    padding-top: 20px;
+    font-family: "h3";
+    font-size: 40px;
+    color: rgb(255, 174, 0);
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ------------------------ FOOTER -------------------------  */
 
 footer {
-
     text-align: center;
     align-items: center;
     justify-content: space-between;
