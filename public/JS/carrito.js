@@ -4,6 +4,8 @@ const tablaBody = document.querySelector("tbody");
 const totalElement = document.querySelector(".total");
 const botonBorrarCarrito = document.querySelector("button:nth-of-type(1)"); 
 
+const botonPagar = document.getElementById("btnPagar");
+
 function mostrarCarrito() {
     tablaBody.innerHTML = ""; 
 
@@ -34,6 +36,15 @@ function borrarCarrito() {
     mostrarCarrito(); 
     alert("El carrito ha sido vaciado.");
 }
+
+function procederAlPago() {
+    
+    const urlPlataformaPago = "https://www.paypal.com/checkoutnow"; 
+
+    window.location.href = urlPlataformaPago;
+}
+
+botonPagar.addEventListener("click", procederAlPago);
 
 botonBorrarCarrito.addEventListener("click", borrarCarrito);
 
