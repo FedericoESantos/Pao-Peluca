@@ -96,6 +96,20 @@ main .cabe nav ul li a:hover {
     font-weight: bolder;
 }
 
+main .cabe div {
+    display: flex;
+    justify-content: center;
+    color: #d8975b;
+    text-shadow: 2px 2px 4px black;
+    padding-bottom: 5px;
+}
+
+main .cabe div #contador {
+    padding-left: 5px;
+    font-weight: bolder;
+    color: #f4f4f4;
+}
+
 /* ------------------------------- SLIDER ------------------------------------------------ */
 
 main .slider {
@@ -221,6 +235,13 @@ main .container .producto img {
 main .container .producto button {
     margin-top: auto;
     margin-bottom: 10px;
+    padding: 5px;
+}
+
+main .container .producto button:hover {
+    background-color: goldenrod;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 
 main .container-info {
@@ -235,6 +256,21 @@ main .container-info span {
     color: aliceblue;
 }
 
+main .carrito {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+main .carrito img {
+    width: 50px;
+}
+
+main .carrito img:hover {
+    width: 80px;
+}
 /* --------------------------------- CONTACTO PAGINA (5) ---------------------- */
 main h2 {
     font-weight: bold;
@@ -293,6 +329,13 @@ main table tbody  td {
 
 main button {
     margin: 30px;
+    padding: 5px;
+}
+
+main button:hover {
+    background-color: goldenrod;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
 
 /* ------------------------ FOOTER -------------------------  */
