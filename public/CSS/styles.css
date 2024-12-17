@@ -201,6 +201,40 @@ main .promocion h3 {
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
 }
 
+/* --------------------------------- EMPRESA PAGINA (2) ---------------------- */
+
+main .info-local {
+    margin: 20px;
+}
+
+main .fotos {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+main .fotos .card img {
+    width: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------------------- PRODUCTOS PAGINA (3) ---------------------- */
 
 main h3 {
